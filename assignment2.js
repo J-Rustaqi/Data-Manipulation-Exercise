@@ -69,11 +69,11 @@ console.log('Is budget enough for fast driver = ' + enoughBudgetForFast);
 
 console.log('=================================================================');
 
-if (enoughBudgetForSlow === "enough" && (costForSlow < costForOK || costForSlow < costForFast)) {
+if (enoughBudgetForSlow === "enough" && (costForSlow < costForOK && costForSlow < costForFast)) {
     console.log('55 MPH is best option');
-  } else if (enoughBudget2 === "Yes" && (costForOK < costForSlow || costForOK < costForFast)) {
+  } else if (enoughBudget2 === "Yes" && (costForOK < costForSlow && costForOK < costForFast)) {
     console.log('60 MPH is best option');
-  } else if (enoughBudget3 === "Yes" && (costForFast < costForSlow || costForFast < costForOK)) {
+  } else if (enoughBudget3 === "Yes" && (costForFast < costForSlow && costForFast < costForOK)) {
     console.log('75 MPH is best option');
   }
 
